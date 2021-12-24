@@ -17,13 +17,7 @@ int main(){
 }
 
 void mySwap(int &x,int &y){
-	if(x > y){
-		int i = x-y;
-		x = x - i;
-		y = y + i;
-	}else{
-		int a = y-x;
-		x = x+a ;
-		y = y-a ;
-	}
+	int i = x , r = y;
+	x = r;
+	y = i;
 }
